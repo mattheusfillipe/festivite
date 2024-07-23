@@ -42,15 +42,19 @@
 
 }
 
+html {
+    margin: 20px;
+}
+
 body {
     max-width: 1280px;
-    margin: 20px;
+    margin: auto auto;
     
     overflow: hidden;
 
     display: grid;
     grid-template-columns: 31.25% 1fr;
-    grid-template-rows: 720px;
+    grid-template-rows: 95vh;
     gap: 20px;
 
     background: var(--shape-bg);

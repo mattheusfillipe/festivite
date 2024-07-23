@@ -51,24 +51,29 @@
                 </div>
 
 
-                <div class="input-wrapper">
-                    <div class="radio-container">
+                <div class="input-wrapper event-type">
+                    <div>
                         <label>Tipo</label>
                         <div class="radio-wrapper">
                             <div class="radio-inner">
-                                <input type="radio" name="event-type" id="local" value="local">
-                                <img src="./assets/icons/building-2.svg" alt="imagem presencial">
-                                <label for="local">Presencial</label>
+                                <div class="image-presencial"></div>
+
+                                <div>
+                                    <input type="radio" name="event-type" id="local" value="local">
+                                    <label for="local">Presencial</label>
+                                </div>
                             </div>
 
                             <div class="radio-inner">
-                                <input type="radio" name="event-type" id="online" value="online">
-                                <img src="./assets/icons/video.svg" alt="imagem online">
-                                <label for="online">Online</label>
+                                <div class="image-online"></div>
+
+                                <div>
+                                    <input type="radio" name="event-type" id="online" value="online">
+                                    <label for="local">Online</label>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="input-wrapper">
                         <label for="address">Local</label>
                         <input type="text" name="address" id="address" placeholder="Link ou endereço">

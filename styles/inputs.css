@@ -20,6 +20,15 @@ textarea::placeholder {
     font: var(--body-md)
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+input[type="datetime-local"]:focus-within {
+    outline: 1px solid var(--brand-light);
+    border-color: var(--brand-light);
+    outline-offset: .1px;
+}
+
 textarea {
     resize: none;
     height: 136px;
@@ -62,18 +71,22 @@ label {
     margin-bottom: .75rem;
 }
 
+input[type="datetime-local"] {
+    position: relative;
+
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+}
+
 .duration {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 1rem;
 }
 
-.radio-inner {
-    display: flex;
-    align-items: center;
-    gap:.5rem;
-
-    img {
-        width: 16px;
-    }
+.event-type {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }
