@@ -43,24 +43,29 @@
 }
 
 body {
+    max-width: 1280px;
     margin: 20px;
-    background: var(--shape-bg);
+    
+    overflow: hidden;
+
     display: grid;
-    grid-template-columns: 400px 1fr;
+    grid-template-columns: 31.25% 1fr;
+    grid-template-rows: 720px;
     gap: 20px;
+
+    background: var(--shape-bg);
 }
 
 .fixed-menu {
-    overflow: hidden;
-
     background-image: url(../assets/images/Background.png);
     background-position: center;
     background-size: cover;
-    object-fit: fill;
     background-repeat: no-repeat;
 
     border-radius: 0.75rem;
-    min-height: 728px;
+    overflow: hidden;
+
+    min-width: 31.25%;
 }
 
 .header {
@@ -90,7 +95,9 @@ main {
     background-color: var(--shabe-body);
     border-radius: 0.75rem;
 
-    overflow: auto;
+    
+    overflow-y: auto;
+    overflow-x: hidden;
 
     padding: 80px 130px;
 

@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./styles/index.css">
 
 </head>
@@ -27,8 +27,59 @@
         <h1>Crie seu convite</h1>
 
         <form method="post" enctype="multipart/form-data">
-            <fieldset>
-                <legend>Sobre o evento</legend>
+            <fieldset class="about">
+                <legend class="area-title">
+                    <span><img src="./assets/icons/calendar.svg" alt=""></span>
+                    <p>Sobre o evento</p>
+                </legend>
+
+                <div class="input-wrapper">
+                    <label for="title">Nome do evento</label>
+                    <input type="text" name="title" id="title" placeholder="Nome do evento">
+                </div>
+
+                <div class="duration">
+                    <div class="input-wrapper">
+                        <label for="start">Início</label>
+                        <input type="datetime-local" name="start" id="start">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="end">Fim</label>
+                        <input type="datetime-local" name="end" id="end">
+                    </div>
+                </div>
+
+
+                <div class="input-wrapper">
+                    <div class="radio-container">
+                        <label>Tipo</label>
+                        <div class="radio-wrapper">
+                            <div class="radio-inner">
+                                <input type="radio" name="event-type" id="local" value="local">
+                                <img src="./assets/icons/building-2.svg" alt="imagem presencial">
+                                <label for="local">Presencial</label>
+                            </div>
+
+                            <div class="radio-inner">
+                                <input type="radio" name="event-type" id="online" value="online">
+                                <img src="./assets/icons/video.svg" alt="imagem online">
+                                <label for="online">Online</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="address">Local</label>
+                        <input type="text" name="address" id="address" placeholder="Link ou endereço">
+                    </div>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="description">Descrição</label>
+                    <textarea name="description" id="description"
+                        placeholder="Escreva sobre os detalhes do evento"></textarea>
+                </div>
             </fieldset>
         </form>
     </main>
