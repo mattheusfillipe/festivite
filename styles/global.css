@@ -41,3 +41,7 @@
     --text-heading: #F9F9F9;
 
 }
+
+body {
+    background: var(--shape-bg);
+}
