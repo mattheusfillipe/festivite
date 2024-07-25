@@ -20,6 +20,7 @@
     position: relative;
 
     & input {
+        all: unset;
         position: absolute;
         inset: 0;
         width: 100%;

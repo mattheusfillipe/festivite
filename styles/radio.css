@@ -58,7 +58,11 @@
     }
 
     &:has(:checked) {
-        font-weight: 700;
+        label {
+            font-weight: 600;
+            color: var(--text-heading);
+        }
+        
         background-color: #2D3136;
 
         & .image-online {
