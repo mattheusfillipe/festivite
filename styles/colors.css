@@ -17,6 +17,10 @@
 
     position: relative;
 
+    & label {
+        margin: 0;
+    }
+
     & input {
         position: absolute;
         inset: 0;
