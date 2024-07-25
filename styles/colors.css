@@ -3,9 +3,8 @@
 }
 
 .color-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(48px, 1fr));
-    row-gap: 8px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .color-select {
@@ -15,12 +14,10 @@
     background: #2D3136;
     border-radius: 999px;
 
-    cursor: pointer;
 
     position: relative;
 
     & input {
-        all: unset;
         position: absolute;
         inset: 0;
         width: 100%;
