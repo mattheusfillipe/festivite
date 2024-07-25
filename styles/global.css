@@ -49,7 +49,7 @@ html {
 body {
     max-width: 1280px;
     margin: auto auto;
-    
+
     overflow: hidden;
 
     display: grid;
@@ -84,7 +84,7 @@ body {
         width: 45.85px;
     }
 
-    .nome__logo  {
+    .nome__logo {
         width: 140px;
     }
 
@@ -99,13 +99,23 @@ main {
     background-color: var(--shabe-body);
     border-radius: 0.75rem;
 
-    
+    &::-webkit-scrollbar {
+        background: var(--input-base);
+        width: .75rem;
+        border-radius: 0 .5rem .5rem 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--input-stroke);
+        border-radius: 0 .5rem .5rem 0;
+    }
+
     overflow-y: auto;
     overflow-x: hidden;
 
     padding: 80px 130px;
 
-    h1 {
+    & h1 {
         font: var(--heading-md);
         font-weight: 700;
         color: var(--text-heading);
