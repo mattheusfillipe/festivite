@@ -1,0 +1,71 @@
+.switchComTexto {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.text-container {
+    position: relative;
+}
+
+.dark {
+    font: var(--body-sm);
+    color: #fff;
+    position: absolute;
+    transition: opacity .5s ease-in-out;
+}
+
+.light {
+    font: var(--body-sm);
+    color: #fff;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+.switch-container {
+    label {
+        margin: 0;
+    }
+
+    #chk {
+        display: none;
+    }
+
+    .switch {
+        display: flex;
+        align-items: center;
+
+        position: relative;
+        background: var(--input-base);
+        border: 1px solid var(--input-stroke);
+        border-radius: 999px;
+
+        width: 64px;
+        height: 32px;
+
+        padding: .25rem;
+
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+    }
+
+    .slider {
+        position: absolute;
+        background-color: var(--input-stroke);
+        border-radius: 9999px;
+
+        width: 24px;
+        height: 24px;
+
+        transition: all .5s ease-in-out;
+    }
+
+    #chk:checked~.switch {
+        background: var(--brand-light);
+    }
+
+    #chk:checked~.switch .slider {
+        transform: translateX(31px);
+        background-color: var(--text-heading);
+    }
+}

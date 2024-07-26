@@ -163,7 +163,7 @@
                                 <input type="radio" name="theme" id="birthday" name="birthday" checked>
                             </div>
                         </label>
-                        
+
                         <label for="theme">
                             <div class="card">
                                 <img src="./assets/images/Image-1.png" alt="imagem infantil">
@@ -254,10 +254,49 @@
                     </div>
                 </div>
 
-                
+                <div class="styleandlanguage">
+                    <div class="style">
+                        <label>Estilo</label>
+                        <div class="switchComTexto">
+                            <div class="switch-container">
+                                <input type="checkbox" id="chk">
+                                <label for="chk" class="switch">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            <div class="text-container">
+                                <p class="dark">Escuro</p>
+                                <p class="light">Claro</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="language">
+                        <label>Foto de capa</label>
+                        <div class="upload">
+                            <label for="archive" class="btn-fake">
+                                <div class="img-archive"></div>
+                                <p>Selecionar</p>
+                                <input type="file" name="archive" id="archive" class="btn-file">
+                            </label>
+                            <span>Nenhum arquivo selecionado</span>
+                        </div>
+                    </div>
+                </div>
             </fieldset>
         </form>
     </main>
+
+    <script>
+        const checkbox = document.getElementById('chk');
+        const darkText = document.querySelector('.dark');
+        const lightText = document.querySelector('.light');
+
+        checkbox.addEventListener('change', () => {
+            darkText.style.opacity = checkbox.checked ? 0 : 1;
+            lightText.style.opacity = checkbox.checked ? 1 : 0;
+        });
+    </script>
 </body>
 
 </html>
