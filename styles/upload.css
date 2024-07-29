@@ -47,7 +47,7 @@
         }
 
         &:hover {
-            background-color: var(--shape-button-hover);
+            background-color: var(--shape-hover);
         }
     }
 
